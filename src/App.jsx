@@ -3,12 +3,22 @@ import "./App.css";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
 import Users from "./Components/Users/Users";
+import Main from "./layout/Main";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <Home /> },
-    { path: "/about", element: <About /> },
-    { path: "/users", element: <Users /> },
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/home", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "friends", element: <h1>Friends</h1> },
+        { path: "/users", element: <Users /> },
+      ],
+    },
+    { path: "*", element: <h1>404 Not Found</h1> },
   ]);
   return (
     <div className="App">

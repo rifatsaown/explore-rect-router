@@ -1,13 +1,11 @@
-import React from 'react';
-import Nav from '../Nav/Nav';
+import React from "react";
 
 const Users = () => {
-    return (
-        <div>
-             <Nav/>
-            <h1>This is Users</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>This is Users</h1>
+    </div>
+  );
 };
 
 export default Users;

@@ -1,0 +1,16 @@
+.nav-link{
+    margin-top: 1rem;
+}
+.nav-link a{
+    text-decoration: none;
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: 0.5rem;
+}
+.nav-link a:hover{
+    background-color: #f30909;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}

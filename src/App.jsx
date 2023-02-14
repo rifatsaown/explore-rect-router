@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
+import Error from "./Components/Error/Error";
 import Friends from "./Components/Friends/Friends";
 import Home from "./Components/Home/Home";
 import Users from "./Components/Users/Users";
@@ -19,7 +20,7 @@ function App() {
         { path: "/users", element: <Users /> },
       ],
     },
-    { path: "*", element: <h1>404 Not Found</h1> },
+    { path: "*", element: <Error/> },
   ]);
   return (
     <div className="App">

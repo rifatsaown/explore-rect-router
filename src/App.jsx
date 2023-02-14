@@ -15,7 +15,7 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/home", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "friends", element: <Friends/> },
+        { path: "friends", element: <Friends /> },
         { path: "/users", element: <Users /> },
       ],
     },
@@ -27,5 +27,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

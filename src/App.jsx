@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
+import Friends from "./Components/Friends/Friends";
 import Home from "./Components/Home/Home";
 import Users from "./Components/Users/Users";
 import Main from "./layout/Main";
@@ -14,7 +15,7 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/home", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "friends", element: <h1>Friends</h1> },
+        { path: "friends", element: <Friends/> },
         { path: "/users", element: <Users /> },
       ],
     },

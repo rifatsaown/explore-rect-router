@@ -16,11 +16,17 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/home", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "friends", element: <Friends /> },
+        {
+          path: "friends",
+          loader: async () => {
+            return fetch("https://jsonplaceholder.typicode.com/users");
+          },
+          element: <Friends />,
+        },
         { path: "/users", element: <Users /> },
       ],
     },
-    { path: "*", element: <Error/> },
+    { path: "*", element: <Error /> },
   ]);
   return (
     <div className="App">

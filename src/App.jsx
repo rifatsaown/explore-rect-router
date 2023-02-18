@@ -7,7 +7,6 @@ import Home from "./Components/Home/Home";
 import Users from "./Components/Users/Users";
 import Main from "./layout/Main";
 
-
 function App() {
   const router = createBrowserRouter([
     {

@@ -27,6 +27,7 @@ function App() {
       ],
     },
     { path: "*", element: <Error /> },
+    
   ]);
   return (
     <div className="App">

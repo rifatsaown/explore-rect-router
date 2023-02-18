@@ -7,7 +7,7 @@ const Friends = () => {
   const friends = useLoaderData();
   return (
     <div>
-        <h1>Friends : {friends.length}</h1>
+      <h1>Friends : {friends.length}</h1>
       <div className="friends-data">
         {friends.length ? (
           friends.map((friend) => (

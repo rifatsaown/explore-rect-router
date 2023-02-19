@@ -5,6 +5,7 @@ import "./Friends.css";
 
 const Friends = () => {
   const friends = useLoaderData();
+  
   return (
     <div>
       <h1>Friends : {friends.length}</h1>
